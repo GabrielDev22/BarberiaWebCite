@@ -1,0 +1,106 @@
+/* Estilo del archivo Profesional */
+.contenedorModalProfesional{
+    width: 65rem;
+    height: 450px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.contenedorProfesional{
+    display: flex;
+}
+
+/* Primera seccion */
+
+.seleccionProfesional{
+    margin-right: 1rem;
+}
+
+.imagenSeleccionProfesional{
+    width: 300px;
+    height: 150px;
+}
+
+.tituloProfesional{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #575757;   
+    margin-top: 1rem;
+}
+
+.textoProfesional{
+    text-align: center;
+    color: #575757;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Segunda seccion */
+
+.profesionalesElegir{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedorProfesionales{
+    width: 150px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    transition: all 0.7s ease-in-out;
+}
+
+.contenedorProfesionales:hover{
+    transform: scale(1.1);
+    border: 2px solid black;
+}
+
+.iconoProfesional{
+    margin-top: 0.3rem;
+    margin-left: 3rem;
+}
+
+.nombreProfesionalElegir{
+    color: #282828;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.contenedorBotonRetroceder{
+    display: flex;
+    margin: 0 auto;
+}
+
+.botonAtras{
+    font-size: 10px;
+    padding: 2px;
+}
+
+/* Boton Atras */
+
+.contenedorBotonRetroceder{
+    width: 50px;
+    margin-right: 15.5rem;
+}
+
+.botonAtras{
+    width: 70px;
+    height: 20px;
+}
+
+.iconoAtras{
+    width: 30px;
+    margin-bottom: 0.5rem;
+}

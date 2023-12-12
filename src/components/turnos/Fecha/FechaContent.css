@@ -1,0 +1,65 @@
+.contenedorFechas{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Seccion Fecha y Horario Explicacion */
+
+.ExplicacionFechas{
+    width: 170px;
+    border-right: 2px solid #575757;
+}
+
+.contenedorImagenFecha{
+    margin-right: 4rem;
+}
+
+.imagenFechas{
+    width: 150px;
+    height: 150px;
+}
+
+.tituloExplicacionFechas{
+    width: 150px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #575757;   
+    margin-top: 1rem;
+}
+
+.explicacionFechasTexto{
+    width: 150px;
+    text-align: center;
+    color: #575757;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.tituloPreguntaFecha{
+    font-size: 18px;
+    margin-left: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #575757;
+}
+
+.contactoPreguntaFecha{
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #999;
+}
+
+/* Seccion Fechas para elegir */
+
+.seleccionFechas{
+    width: 100%;
+    border-right: 2px solid #575757;
+}
+
+/* Resumen citas */
+.resumenCita{
+    width: 50%;
+    border-right: 2px solid #575757;
+}

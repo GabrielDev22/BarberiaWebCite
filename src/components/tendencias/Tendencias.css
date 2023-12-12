@@ -1,0 +1,22 @@
+.contenedorTendencias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.Two{
+    height: 600px;
+}
+
+.Five{
+    margin-left: 10rem;
+}
+
+.imagenTendencias{
+    width: 400px;
+    margin-top: 5rem;
+    background-color: slategray;
+    opacity: 0.8;
+}
+

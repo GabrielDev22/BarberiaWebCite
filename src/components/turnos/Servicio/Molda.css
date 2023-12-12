@@ -1,0 +1,167 @@
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.contenedorModal{
+    width: 800px;
+    min-height: 100px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+}
+
+.encabezadoModal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.encabezadoModal h3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #282828;
+    margin-left: 18rem;
+}
+
+.botonCerrar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    color: #090909;
+}
+
+.botonCerrar svg{
+    width: 100%;
+    height: 100%;
+}
+
+.contenidoModal{
+    display: flex;
+    align-items: center;
+}
+
+.seleccionServicio{
+    height: 100%;
+}
+
+.imagenServicioModal{
+    width: 250px;
+}
+
+.tituloSeleccionServicio{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #575757;   
+    margin-top: 1rem;
+}
+
+.textoSeleccionServicio{
+    text-align: center;
+    color: #575757;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.tituloPreguntaServicio{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #575757;
+}
+
+.contactoPreguntaServicio{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #999;
+}
+
+/* Otra parte de la seccion modal */
+
+.contenidoPrincipalServicio{
+    width: 30rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.contenidoServicio{
+    height: 80px;
+    display: flex;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    transition: 0.3s ease-in;
+}
+
+.contenidoServicio:hover{
+    border: 1px solid black;
+    box-shadow: 5px 5px 3px black;
+    transform: scale(1.02);
+}
+
+.infoServicio{
+    width: 18rem;
+}
+
+.iconoServicio{
+    width: 45px;
+}
+
+.tituloInfoServicio{
+    color: #282828;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+
+.textoInfoServicio{
+    width: 220px;
+    font-size: 12px;
+    margin-top: 0.4rem;
+    margin-left: 2rem;
+    color: #999;
+    text-align: center;
+}
+
+.costoServicio{
+    width: 4.5rem;
+    border-left: 1px solid #999;
+}
+
+.montoServicio{
+    color: #282828;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 1.4rem;
+    margin-left: 0.5rem;
+}
+
+.textoServicio{
+    font-size: 10px;
+    margin-top: 0.2rem;
+    margin-left: 0.6rem;
+}
