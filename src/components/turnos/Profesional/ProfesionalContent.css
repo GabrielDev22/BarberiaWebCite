@@ -1,7 +1,7 @@
 /* Estilo del archivo Profesional */
 .contenedorModalProfesional{
-    width: 65rem;
-    height: 450px;
+    width: 45rem;
+    height: 550px;
     min-height: 200px;
     background-color: #fff;
     position: relative;
@@ -17,7 +17,7 @@
 /* Primera seccion */
 
 .seleccionProfesional{
-    margin-right: 1rem;
+    margin-right: 0.4rem;
 }
 
 .imagenSeleccionProfesional{
@@ -103,4 +103,42 @@
 .iconoAtras{
     width: 30px;
     margin-bottom: 0.5rem;
+}
+
+/* CONTADOR PRODUCTOS SELECCIONADOS  */
+
+.contenedorSeleccionProduct{
+    background-color: rgb(24, 167, 167);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.tituloListProduct{
+    color: #f1f1f1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.contenedorProducts{
+    width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.carritoProduct{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f1f1f1;
+    font-size: 16px;
+    word-spacing: 4px;
+    text-align: center;
+}
+
+.degradadoDecoracion{
+
 }

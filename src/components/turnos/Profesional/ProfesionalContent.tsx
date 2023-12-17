@@ -1,4 +1,3 @@
-import { ProductList } from "../product/ProductList";
 import "./ProfesionalContent.css";
 
 type ProfesionalContentProps = {
@@ -66,7 +65,6 @@ export const ProfesionalContent: React.FC<ProfesionalContentProps> = ({cambiarEs
               <h2 className="nombreProfesionalElegir">FERNANDO</h2>
           </div>
         </div>
-          <ProductList />
     </div>
   )
 }

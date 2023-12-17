@@ -83,10 +83,7 @@ export const Servicios = () => {
   return (
     
     <div className="contenedorNuestrosServicios">
-        <h1>Nuestros Servicios</h1>
-
         <div className="contenidoServicios">
-
             <div className="accordion">
               <button className="accordion-visible" onClick={toggleState}>
                 <span>

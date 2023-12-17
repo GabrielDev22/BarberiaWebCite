@@ -7,6 +7,10 @@ import {ProfesionalContent} from "./Profesional/ProfesionalContent";
 import {FechaContent} from "./Fecha/FechaContent";
 import {FechaTurno} from "./Fecha/FechaTurno";
 
+const productList = [
+  {id: 1, name: 'CORTE DE CABELLO', price:3500, nameTwo: 'CORTE & BARBA', priceTwo: 4800, nameThree: 'BARBA', priceThree: 3000},
+]
+
 
 export const EstadoModal = () => {
 
@@ -16,6 +20,8 @@ export const EstadoModal = () => {
     const [modal1Open, setModal1Open] = useState(false);
     const [modal2Open, setModal2Open] = useState(false);
     const [modal3Open, setModal3Open] = useState(false);
+    const [selectedProducts, setSelectedProducts] = useState<selectedarroducts[]>([])
+    const [products] = useState(productList);
     
     const handleEstadoModalOne = () => {
       setEstadoModal1(!estadoModal1)
@@ -52,6 +58,10 @@ export const EstadoModal = () => {
         }
       }
 
+      const handleSelectProduct = (product) => {
+        setSelectedProducts([...selectedProducts, product])
+      }
+
   return (
     <div>
 
@@ -63,11 +73,32 @@ export const EstadoModal = () => {
         </button>
 
         <Modal estado={estadoModal1} cambiarEstado={setEstadoModal1} isOpenDoor={modal1Open}>
-              <ModalContent cambiarEstado={handleEstadoModalTwo} />
+              {products.map((product) => (
+                <ModalContent cambiarEstado={handleEstadoModalTwo} key={product.id} {...product} onSelect={handleSelectProduct} />
+              ))}
           </Modal>
 
           <Profesional newEstado={estadoModal2} cambiarEstado={setEstadoModal2} isOpenDoor={modal2Open}>
             <ProfesionalContent cambiarEstado={handleEstadoModalThree} goToPreviousSection={goToPreviousSection} />
+            <div className="contenedorSeleccionProduct">
+              <h2 className="tituloListProduct">Product seleccionados</h2>
+              <div className="contenedorProducts">
+                {selectedProducts.map((product) => (
+                  <div>
+                    <p key={product.id} className="carritoProduct">
+                      {product.name} - ${product.price}
+                      <div className="degradadoDecoracion"></div>
+                    </p>
+                    <p key={product.idTwo} className="carritoProduct">
+                        {product.nameTwo} - ${product.priceTwo} 
+                    </p>
+                    <p key={product.idThree} className="carritoProduct">
+                        {product.nameThree} - ${product.priceThree} 
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </Profesional>
 
           <FechaTurno estado={estadoModal3} cambiarEstado={setEstadoModal3} isOpenDoor={modal3Open}>
